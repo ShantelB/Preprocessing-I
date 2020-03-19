@@ -149,7 +149,8 @@ body {
   background-image: url(../images/Cliffs3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 100%;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1rem;
 }
 nav {
   display: flex;
@@ -163,17 +164,134 @@ nav a {
   nav {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+}
+#name img {
+  height: 62vh;
+  width: 33%;
+  margin-left: 26%;
+  padding-left: 15%;
+}
+@media (max-width: 500px) {
+  #name img {
+    height: 48vh;
+    width: 48%;
+    margin-left: 21%;
+    padding-left: 11%;
   }
 }
 #name h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   display: flex;
   justify-content: center;
   padding: 1% 0%;
+  font-family: 'Anton', sans-serif;
 }
 #name contact {
   font-family: 'Anton', sans-serif;
-  font-size: 1rem;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#name contact div {
+  padding: 1% 1%;
+}
+@media (max-width: 500px) {
+  #name contact {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
+.professional h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1%;
+  padding-top: 2%;
   display: flex;
   justify-content: center;
+}
+.professional p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 20% 2% 20%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .professional {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 1rem;
+    padding: 0% -1% 0% 0%;
+  }
+}
+section {
+  display: flex;
+  justify-content: center;
+  margin-left: 8%;
+}
+section h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2%;
+  padding-left: 28%;
+}
+@media (max-width: 500px) {
+  section h2 {
+    padding-left: 27%;
+  }
+}
+section p {
+  width: 90%;
+  font-size: 1.5rem;
+}
+section #bold {
+  font-size: 1.5rem;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+}
+.education {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.education h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2% 0% 1% 45%;
+}
+.education #school {
+  font-size: 1.5rem;
+  padding: 0% 0% 0% 45%;
+}
+.education p {
+  font-size: 2rem;
+  padding: 1% 0% 5% 37%;
+}
+@media (max-width: 500px) {
+  .education {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 30%;
+  }
 }

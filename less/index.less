@@ -59,7 +59,8 @@ html, body {
 	background-image: url(../images/Cliffs3.jpg);
 	background-repeat: no-repeat;
 	background-size: cover;	
-	height: 100%;
+	font-family: @main-font;
+	font-size: 1rem;
 }
 
 //Variables
@@ -74,7 +75,7 @@ html, body {
 
 .fonts(){
 	font-family: @heading-font;
-	font-size: 1rem;
+	font-size: 2rem;
 }
 // Navigation Bar
 nav {
@@ -87,27 +88,143 @@ nav {
 	} //closing bracket to a
 	@media(max-width:500px){
 		.direction();
+		align-items: center;
 
 	}//closing bracket to @media
 } //closing bracket to nav
 
 #name {
 	img {
-		
+		height: 62vh;
+		width: 33%;
+		margin-left: 26%;
+		padding-left: 15%;
+
+		@media(max-width:500px){
+			height: 48vh;
+		width: 48%;
+		margin-left: 21%;
+		padding-left: 11%;
+		}//Closing bracket for @media
 	}//closing bracket for img
 	h1 {
-		font-size: 3rem;
+		font-size: 4rem;
 		display: flex;
 		justify-content: center;
 		padding: 1% 0%;
-		@heading-font;
+		font-family: @heading-font;
 	}//Closing bracket for h1
 	
 	contact {
 		.fonts();
 		display: flex;
-		justify-content: ;
+		flex-direction: row;
+		justify-content: center;
+		div {
+			padding: 1% 1%;
+		}//Closing bracket for div
+		@media(max-width:500px){
+			.direction();
+			padding-bottom: 2%;
+			align-items: center;
+			font-size: 1rem;
+		}//Clossing bracket for @media
+
 	}//Closing bracket for contact
+
 }//Closing bracket for #name
 
+.professional {
+	h2 {
+		.fonts();
+		padding-bottom: 1%;
+		padding-top: 2%;
+		display: flex;
+		justify-content: center;
+	}// Closing bracket for h2	
 
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0% 20% 2% 20%;
+		font-size: 1.5rem;
+	}//Closing for p
+	@media(max-width:500px){
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		font-size: 1rem;
+		padding: 0% -1% 0% 0%;
+	}//Closing bracket for @media
+	
+}//Closing bracket for .professional
+
+section {
+	display: flex;
+	justify-content: center;
+	margin-left: 8%;
+
+	h2 {
+		.fonts();
+		padding-bottom: 2%;
+		padding-left: 28%;
+
+		@media(max-width:500px){
+			padding-left: 27%;
+		} 
+	}//Closing bracket for h2
+
+	p {
+		width: 90%;
+		font-size: 1.5rem;
+	}// Closing bracket p 
+	
+	#bold {
+		font-size: 1.5rem;
+		padding-left: 0;
+	}
+	@media(max-width:500px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 1rem;
+	}//Closing bracket for @media
+
+}// closing bracket for section
+
+.education {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	h2 {
+		.fonts();
+		padding-bottom: 1%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 2% 0% 1% 45%;
+	}//Closing bracket for h2
+
+	#school {
+		font-size: 1.5rem;
+		padding: 0% 0% 0% 45%;
+	}//Closing bracket for #school
+	p {
+		font-size: 2rem;
+		padding: 1% 0% 5% 37%;
+	}// Closing bracket for p
+
+	@media(max-width:500px) {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		font-size: 1rem;
+		padding-left: 5%;
+		padding-right: 30%;
+	
+
+	}//Closing bracket for @media
+
+}//Closing bracket for .education
