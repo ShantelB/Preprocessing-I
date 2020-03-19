@@ -81,24 +81,37 @@ html, body {
 nav {
 	display: flex;
 	justify-content: space-evenly;
+	padding: 2%;
 
 	a {
-		color: red;
-		padding: 2% 0%;
+		color: #3CB371;
+		padding: 1% 1%;
+		margin-bottom: 2%;
+		text-decoration: none;
+		border: 1px solid #3CB371;
+		border-radius: 25px;
+
+		&:hover {
+			color: darken(#3CB371, 50%);
+			border-color: darken(#3CB371, 50%);
+		}//Closing bracket to hover
+
 	} //closing bracket to a
 	@media(max-width:500px){
 		.direction();
 		align-items: center;
+		justify-content: space-around;
 
 	}//closing bracket to @media
 } //closing bracket to nav
 
 #name {
 	img {
-		height: 62vh;
+		height: 40vh;
 		width: 33%;
 		margin-left: 26%;
 		padding-left: 15%;
+	
 
 		@media(max-width:500px){
 			height: 48vh;
@@ -172,7 +185,7 @@ section {
 
 		@media(max-width:500px){
 			padding-left: 27%;
-		} 
+		} //Closing bracket for @media
 	}//Closing bracket for h2
 
 	p {
