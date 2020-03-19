@@ -53,10 +53,61 @@ table {
     box-sizing: border-box;
 }
 
-
+@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai+2&display=swap');
 
 html, body {
 	background-image: url(../images/Cliffs3.jpg);
 	background-repeat: no-repeat;
-	background-size: cover;
+	background-size: cover;	
+	height: 100%;
 }
+
+//Variables
+@main-font:'Baloo Bhai 2', cursive;
+@heading-font:'Anton', sans-serif;
+
+//Mix ins
+.direction(){
+	display:flex;
+	flex-direction: column;
+}
+
+.fonts(){
+	font-family: @heading-font;
+	font-size: 1rem;
+}
+// Navigation Bar
+nav {
+	display: flex;
+	justify-content: space-evenly;
+
+	a {
+		color: red;
+		padding: 2% 0%;
+	} //closing bracket to a
+	@media(max-width:500px){
+		.direction();
+
+	}//closing bracket to @media
+} //closing bracket to nav
+
+#name {
+	img {
+		
+	}//closing bracket for img
+	h1 {
+		font-size: 3rem;
+		display: flex;
+		justify-content: center;
+		padding: 1% 0%;
+		@heading-font;
+	}//Closing bracket for h1
+	
+	contact {
+		.fonts();
+		display: flex;
+		justify-content: ;
+	}//Closing bracket for contact
+}//Closing bracket for #name
+
+

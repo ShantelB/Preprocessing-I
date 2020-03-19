@@ -130,9 +130,50 @@ table {
 * {
   box-sizing: border-box;
 }
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Bhai 2 Regular'), local('BalooBhai2-Regular'), url(https://fonts.gstatic.com/s/baloobhai2/v1/sZlDdRSL-z1VEWZ4YNA7Y5IHdt7i.ttf) format('truetype');
+}
 html,
 body {
   background-image: url(../images/Cliffs3.jpg);
   background-repeat: no-repeat;
   background-size: cover;
+  height: 100%;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+}
+nav a {
+  color: red;
+  padding: 2% 0%;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+  }
+}
+#name h1 {
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  padding: 1% 0%;
+}
+#name contact {
+  font-family: 'Anton', sans-serif;
+  font-size: 1rem;
+  display: flex;
+  justify-content: center;
 }
