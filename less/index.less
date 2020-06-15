@@ -53,7 +53,191 @@ table {
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css?family=Anton|Baloo+Bhai+2&display=swap');
+
 html, body {
-    height: 100%;
+	background-image: url(../images/Cliffs3.jpg);
+	background-repeat: no-repeat;
+	background-size: cover;	
+	font-family: @main-font;
+	font-size: 1rem;
 }
 
+//Variables
+@main-font:'Baloo Bhai 2', cursive;
+@heading-font:'Anton', sans-serif;
+
+//Mix ins
+.direction(){
+	display:flex;
+	flex-direction: column;
+}
+
+.fonts(){
+	font-family: @heading-font;
+	font-size: 2rem;
+}
+// Navigation Bar
+nav {
+	display: flex;
+	justify-content: space-evenly;
+	padding: 2%;
+
+	a {
+		color: #3CB371;
+		padding: 1% 1%;
+		margin-bottom: 2%;
+		text-decoration: none;
+		border: 1px solid #3CB371;
+		border-radius: 25px;
+
+		&:hover {
+			color: darken(#3CB371, 50%);
+			border-color: darken(#3CB371, 50%);
+		}//Closing bracket to hover
+
+	} //closing bracket to a
+	@media(max-width:500px){
+		.direction();
+		align-items: center;
+		justify-content: space-around;
+
+	}//closing bracket to @media
+} //closing bracket to nav
+
+#name {
+	img {
+		height: 40vh;
+		width: 33%;
+		margin-left: 26%;
+		padding-left: 15%;
+	
+
+		@media(max-width:500px){
+			height: 48vh;
+		width: 48%;
+		margin-left: 21%;
+		padding-left: 11%;
+		}//Closing bracket for @media
+	}//closing bracket for img
+	h1 {
+		font-size: 4rem;
+		display: flex;
+		justify-content: center;
+		padding: 1% 0%;
+		font-family: @heading-font;
+	}//Closing bracket for h1
+	
+	contact {
+		.fonts();
+		display: flex;
+		flex-direction: row;
+		justify-content: center;
+		div {
+			padding: 1% 1%;
+		}//Closing bracket for div
+		@media(max-width:500px){
+			.direction();
+			padding-bottom: 2%;
+			align-items: center;
+			font-size: 1rem;
+		}//Clossing bracket for @media
+
+	}//Closing bracket for contact
+
+}//Closing bracket for #name
+
+.professional {
+	h2 {
+		.fonts();
+		padding-bottom: 1%;
+		padding-top: 2%;
+		display: flex;
+		justify-content: center;
+	}// Closing bracket for h2	
+
+	p {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0% 20% 2% 20%;
+		font-size: 1.5rem;
+	}//Closing for p
+	@media(max-width:500px){
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		font-size: 1rem;
+		padding: 0% -1% 0% 0%;
+	}//Closing bracket for @media
+	
+}//Closing bracket for .professional
+
+section {
+	display: flex;
+	justify-content: center;
+	margin-left: 8%;
+
+	h2 {
+		.fonts();
+		padding-bottom: 2%;
+		padding-left: 28%;
+
+		@media(max-width:500px){
+			padding-left: 27%;
+		} //Closing bracket for @media
+	}//Closing bracket for h2
+
+	p {
+		width: 90%;
+		font-size: 1.5rem;
+	}// Closing bracket p 
+	
+	#bold {
+		font-size: 1.5rem;
+		padding-left: 0;
+	}
+	@media(max-width:500px){
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		font-size: 1rem;
+	}//Closing bracket for @media
+
+}// closing bracket for section
+
+.education {
+	display: flex;
+	justify-content: center;
+	flex-direction: column;
+
+	h2 {
+		.fonts();
+		padding-bottom: 1%;
+		display: flex;
+		align-items: center;
+		text-align: center;
+		padding: 2% 0% 1% 45%;
+	}//Closing bracket for h2
+
+	#school {
+		font-size: 1.5rem;
+		padding: 0% 0% 0% 45%;
+	}//Closing bracket for #school
+	p {
+		font-size: 2rem;
+		padding: 1% 0% 5% 37%;
+	}// Closing bracket for p
+
+	@media(max-width:500px) {
+		display: flex;
+		flex-direction: column;
+		justify-items: center;
+		font-size: 1rem;
+		padding-left: 5%;
+		padding-right: 30%;
+	
+
+	}//Closing bracket for @media
+
+}//Closing bracket for .education

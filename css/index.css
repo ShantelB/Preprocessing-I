@@ -1,1 +1,307 @@
-/* Compile your LESS file! */
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol,
+ul {
+  list-style: none;
+}
+blockquote,
+q {
+  quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+/* Set every element's box-sizing to border-box */
+* {
+  box-sizing: border-box;
+}
+@font-face {
+  font-family: 'Anton';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Anton Regular'), local('Anton-Regular'), url(https://fonts.gstatic.com/s/anton/v11/1Ptgg87LROyAm3Kz-Co.ttf) format('truetype');
+}
+@font-face {
+  font-family: 'Baloo Bhai 2';
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: local('Baloo Bhai 2 Regular'), local('BalooBhai2-Regular'), url(https://fonts.gstatic.com/s/baloobhai2/v1/sZlDdRSL-z1VEWZ4YNA7Y5IHdt7i.ttf) format('truetype');
+}
+html,
+body {
+  background-image: url(../images/Cliffs3.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  font-family: 'Baloo Bhai 2', cursive;
+  font-size: 1rem;
+}
+nav {
+  display: flex;
+  justify-content: space-evenly;
+  padding: 2%;
+}
+nav a {
+  color: #3CB371;
+  padding: 1% 1%;
+  margin-bottom: 2%;
+  text-decoration: none;
+  border: 1px solid #3CB371;
+  border-radius: 25px;
+}
+nav a:hover {
+  color: #000000;
+  border-color: #000000;
+}
+@media (max-width: 500px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+  }
+}
+#name img {
+  height: 40vh;
+  width: 33%;
+  margin-left: 26%;
+  padding-left: 15%;
+}
+@media (max-width: 500px) {
+  #name img {
+    height: 48vh;
+    width: 48%;
+    margin-left: 21%;
+    padding-left: 11%;
+  }
+}
+#name h1 {
+  font-size: 4rem;
+  display: flex;
+  justify-content: center;
+  padding: 1% 0%;
+  font-family: 'Anton', sans-serif;
+}
+#name contact {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+#name contact div {
+  padding: 1% 1%;
+}
+@media (max-width: 500px) {
+  #name contact {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 2%;
+    align-items: center;
+    font-size: 1rem;
+  }
+}
+.professional h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1%;
+  padding-top: 2%;
+  display: flex;
+  justify-content: center;
+}
+.professional p {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 0% 20% 2% 20%;
+  font-size: 1.5rem;
+}
+@media (max-width: 500px) {
+  .professional {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 1rem;
+    padding: 0% -1% 0% 0%;
+  }
+}
+section {
+  display: flex;
+  justify-content: center;
+  margin-left: 8%;
+}
+section h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 2%;
+  padding-left: 28%;
+}
+@media (max-width: 500px) {
+  section h2 {
+    padding-left: 27%;
+  }
+}
+section p {
+  width: 90%;
+  font-size: 1.5rem;
+}
+section #bold {
+  font-size: 1.5rem;
+  padding-left: 0;
+}
+@media (max-width: 500px) {
+  section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1rem;
+  }
+}
+.education {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.education h2 {
+  font-family: 'Anton', sans-serif;
+  font-size: 2rem;
+  padding-bottom: 1%;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  padding: 2% 0% 1% 45%;
+}
+.education #school {
+  font-size: 1.5rem;
+  padding: 0% 0% 0% 45%;
+}
+.education p {
+  font-size: 2rem;
+  padding: 1% 0% 5% 37%;
+}
+@media (max-width: 500px) {
+  .education {
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+    font-size: 1rem;
+    padding-left: 5%;
+    padding-right: 30%;
+  }
+}
